@@ -1,0 +1,39 @@
+{
+  "name": "cap-theorem-sim",
+  "version": "1.0.0",
+  "description": "A Node.js project demonstrating the CAP theorem through simulation.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "docker:build": "docker build -t cap-theorem-sim .",
+    "docker:run": "docker run -p 3000:3000 cap-theorem-sim"
+  },
+  "keywords": [
+    "cap-theorem",
+    "distributed-systems",
+    "simulation",
+    "nodejs",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "jest": "^29.0.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3"
+  }
+}
